@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/fav.png" type="image/x-icon">
+    <title>Food & Grocery Delivery-Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+         <span class="logo">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28" data-testid="brand-icon-icon" aria-hidden="true" focusable="false" class="logo-icon"><path d="M35 0H5C2.24 0 0 2.24 0 5v30c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Z" fill="#ff2b85"></path><path d="M14.58 17.53c.41-.04.71-.4.68-.81a.756.756 0 0 0-.81-.68c-.39.03-.68.35-.68.74.02.43.38.76.81.75Zm10.44-1.33c.12-.09.25-.14.4-.16.43-.02.79.32.81.75 0 .41-.33.75-.75.75s-.75-.33-.75-.75c0-.23.11-.45.29-.59Z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M33.51 14.52v-.03c-.15-.3-.1-.65.12-.9a4.983 4.983 0 0 0 .89-4.78c-.06-.19-.34-.24-.61-.29-.26-.05-.52-.09-.62-.26-.09-.15-.06-.38 0-.63.02-.07.03-.13.04-.2.05-.26.07-.51-.06-.64s-.28-.26-.42-.37l-.09-.07c-1-.74-2.23-1.1-3.47-1.03-1.08.05-2.23.41-3.06 1.14-.4.29-.92.37-1.39.22l-.07-.02c-.84-.3-1.7-.52-2.58-.66a14.28 14.28 0 0 0-6.95.66h-.05c-.45.18-.96.1-1.35-.19-1.55-1.37-4.68-1.71-6.72.01-2.23 1.88-2.36 5.17-.71 7.1.22.25.26.6.12.9-.98 2-1.5 4.2-1.51 6.43 0 7.97 6.72 13.77 15 13.77 8.28 0 15-5.8 15-13.77 0-2.22-.52-4.41-1.49-6.41 0 0 0 .02-.01.02h-.01ZM19.9 20.19c1.19 0 2.15.26 2.15.72 0 .46-.96 1.5-2.15 1.5s-2.15-1.04-2.15-1.5c0-.46.96-.72 2.15-.72ZM7.86 11.8a.578.578 0 0 1-.18-.2c-.02-.03-.04-.07-.06-.1-.36-.66-.45-1.44-.23-2.16.42-1.41 1.92-2.24 3.35-2.05.37.05.74.17 1.07.35.14.08.26.17.37.28.04.04.08.09.1.15.02.09 0 .18-.07.25-.06.06-.14.11-.22.15-1.37.8-2.49 1.95-3.52 3.14-.17.19-.35.37-.61.19Zm3.66 11.33c-1.24-.14-2.32-1.45-2.73-2.77-.18-.58-.61-3.26 1.31-5.2.64-.64 1.54-1.21 2.79-1.59.41-.1.82-.15 1.24-.15.62 0 1.36.1 1.95.53 1.24.91 1.26 2.44.52 3.23s-2.4 2.59-2.83 4.06c-.42 1.47-1.01 2.04-2.26 1.9 0 0 .01-.01.01 0v-.01Zm8.4 4.43h-.04c-2.39-.01-4.32-1.7-4.32-3.4 0-.59.26-.89.89-.73.37.09 1.89.48 3.27.48h.35c1.35 0 2.82-.37 3.24-.48h.03c.64-.16.89.14.89.72 0 1.7-1.93 3.39-4.32 3.4h.01v.01Zm11.09-7.22c-.41 1.32-1.49 2.63-2.73 2.77-1.24.14-1.83-.42-2.26-1.9-.43-1.47-2.09-3.28-2.83-4.07-.74-.78-.72-2.32.52-3.23.58-.43 1.33-.53 1.95-.53.42 0 .83.05 1.24.15 1.25.38 2.15.94 2.79 1.58 1.92 1.94 1.49 4.62 1.31 5.2 0 0 .01.03 0 .03h.01Zm1.37-8.84-.06.1a.86.86 0 0 1-.18.2c-.26.18-.44 0-.61-.19-1.03-1.19-2.15-2.34-3.52-3.14a1.07 1.07 0 0 1-.22-.15.33.33 0 0 1-.08-.25c.02-.06.05-.11.1-.15.11-.11.23-.21.37-.28.33-.18.7-.3 1.07-.35 1.43-.19 2.93.64 3.35 2.05.21.72.13 1.5-.23 2.16h.01Z" fill="#fff"></path></svg>
+            <p>foodpanda</p>
+         </span>
+         <span class="login">
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+            <div class="card"><svg aria-hidden="true" focusable="false" class="fl-none" width="25" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z"></path></svg></div>
+         </span>
+        </nav>
+<div class="afterlogin">
+    <p  class="locationresturant"><i class="uil uil-location-point"></i> Location Bahwalpur</p>
+    <p class="account"><i class="uil uil-user"></i> M Ramzan</p>
+<div class="mainhome">
+    <h1>Food and groceries delivery from Bahawalpur’s best restaurants and shops</h1>
+    <img src="Assets/refresh-hero-home-pk.png" alt="">
+</div>
+<div class="cityresturant">
+    <h2>All Restaurants</h2>
+    <div class="resturants">
+        <div class="branch">
+     <div class="span1">10% off Rs.199</div>
+     <div class="span2">Gift:Free delivery...</div>
+        <img src="Resturant/fb8v-listing.jpg" alt="">
+        <div class="name">
+            <h3>Baba Naseer Choley Wala</h3>
+            <div><i class="uil uil-favorite"></i></i>4.6 (500+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+        <div class="branch">
+     <div class="span1">Upto 10% off ...</div>
+     <div class="span2">Gift:Free delivery...</div>
+        <img src="Resturant/hwcg-listing.jpg" alt="">
+        <div class="name">
+            <h3>BFC fast food</h3>
+            <div><i class="uil uil-favorite"></i>4.7 (2500+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+        <div class="branch">
+     <div class="span1">Upto 20% off...</div>
+     <div class="span2">Gift:Free delivery...</div>
+        <img src="Resturant/m1ht-listing.jpg" alt="">
+        <div class="name">
+            <h3>Tariq Food Cafe</h3>
+            <div><i class="uil uil-favorite"></i>4.8 (3500+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+        <div class="branch">
+     <div class="span1">10% off Rs.199</div>
+     <div class="span2">Gift:Delivery charges...</div>
+        <img src="Resturant/u2ka-listing.jpg" alt="">
+        <div class="name">
+            <h3>Al- Rasheed Sweets & Bakers</h3>
+            <div><i class="uil uil-favorite"></i>4.9 (5000+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+        <div class="branch">
+     <div class="span1">Upto 10% off..</div>
+     <div class="span2">Gift:Free delivery...</div>
+        <img src="Resturant/u3gb-listing.jpg" alt="">
+        <div class="name">
+            <h3>Khawaja gareeb Nawaz Restaurant</h3>
+            <div><i class="uil uil-favorite"></i>4.6 (200+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+        <div class="branch">
+     <div class="span1">10% off Rs.199</div>
+     <div class="span2">Gift:Free delivery...</div>
+        <img src="Resturant/v6ij-listing.jpg" alt="">
+        <div class="name">
+            <h3>Papa's Kitchen</h3>
+            <div><i class="uil uil-favorite"></i>4.9 (3000+)</div>
+        </div>
+        <p class="nationality">Pakistani</p>
+        </div>
+    </div>
+</div>
+<div class="orderable">
+    <div class="popular">
+        <div class="span">
+       <img src="Resturant/fired.jpg" alt="" srcset="">
+       <h2>Popular</h2> 
+    </div>
+        <p>Most ordered right now.</p>
+    </div>
+<div class="ordered">
+<div class="quantity">
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Chawal Cholay</h2>
+        <div class="price">
+        <p class="minprice">Rs.162 </p>
+        <p class="maxprice">Rs.180</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/choley chawals.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Nihari</h2>
+        <div class="price">
+        <p class="minprice">Rs.261 </p>
+        <p class="maxprice">Rs.290</p>
+        </div>
+        <p class="inform">1x plate of meat nihari</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/nihariy.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Lassi glass</h2>
+        <div class="price">
+        <p class="minprice">Rs.150 </p>
+        <p class="maxprice">Rs.162</p>
+        </div>
+        <p class="inform">1 Glass of Lasi</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/lasi.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Paey</h2>
+        <div class="price">
+        <p class="minprice">Rs.387 </p>
+        <p class="maxprice">Rs.430</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/Paey.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Pepsi Can-250ml</h2>
+        <div class="price">
+        <p class="minprice">Rs.120 </p>
+        <p class="maxprice">Rs.150</p>
+        </div>
+        <p class="inform">The Bold, Refreshing & STRONG cola! Click to add to your meal.</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/pepsi.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Chicken Biryani</h2>
+        <div class="price">
+        <p class="minprice">Rs.252 </p>
+        <p class="maxprice">Rs.280</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/chicken biryani.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Pepsi Deal 2</h2>
+        <div class="price">
+        <p class="minprice">Rs.369 </p>
+        <p class="maxprice">Rs.410</p>
+        </div>
+        <p class="inform">1 Chicken qorma & Pepsi - 500 ml</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/pepsi deal.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Sada Chanay</h2>
+        <div class="price">
+        <p class="minprice">Rs.102 </p>
+        <p class="maxprice">Rs.115</p>
+        </div>
+        <p class="inform">1x Plate of Channa </p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/channey.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Chicken Qorma</h2>
+        <div class="price">
+        <p class="minprice">Rs.252 </p>
+        <p class="maxprice">Rs.280</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/chicken qorma.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Qeema</h2>
+        <div class="price">
+        <p class="minprice">Rs.234 </p>
+        <p class="maxprice">Rs.260</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/qeema.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+    <div class="quantitityitem">
+    <div class="detail">
+        <h2 id="names">Daal Mash</h2>
+        <div class="price">
+        <p class="minprice">Rs.130 </p>
+        <p class="maxprice">Rs.160</p>
+        </div>
+        <p class="inform">Serves 1</p>
+    </div>
+    <div class="images">
+        <div class="img">
+        <img src="items/Daal Mash.jpg" alt="" srcset="">
+        </div>
+        <button class="plus">+</button>
+    </div>
+    </div>
+</div>
+<div class="cart">
+    
+    <div class="details">
+        <button class="delivery">Delivery</button>
+        <button class="picked">Picked-up</button>
+    </div>
+    <div class="cartempty">
+    <div class="imagess">
+        <img src="/items/illu_cart_empty.svg" alt="" height="150px" width="150px">
+    </div>
+    <div class="informationcart">
+        <h2 class="headings">Hungry?</h2>
+        <p class="paras">You haven't added anything to your cart! Please select your choice get offers</p>
+    </div>
+  </div>
+    <div class="orderdetails">
+    
+    </div>
+    <div class="paymentsdetail">
+      <div class="total">  <h2>Total</h2><p> (incl.txt)</p></div>
+     <h2 class="Rs">Rs 0.0</h2>
+    </div>
+    <button id="payment">Review payment and address</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+  <div class="homepage">
+            <div class="main">
+            <div class="location">
+                <p>It's the food and groceries you love, delivered<p>
+                <div class="locate"><input type="text" id="adrress" placeholder=" Cityname , Countryname">
+                <button class="search-button"><i class="uil uil-crosshairs"></i>Locate me</button>
+                <button id="food">Find Food</button>
+            </div>
+            </div>
+            <div class="image">
+                <img src="/Assets/refresh-hero-home-pk.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="resturant">
+            <div class="prepare">
+                <p>You prepare the food, we handle the rest      </p>
+            </div>
+            <img src="/Assets/home-vendor-pk.jpg" alt="" srcset="">
+            <div class="started">
+                <h3>List your restaurant or shop on foodpanda </h3>
+                <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+    
+                   <p>It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>  
+    
+                   <p>Interested? Let's start our partnership today!
+                    </p>
+                    <button>Get started</button>
+            </div>  
+            <div class="starter"></div>
+        </div>
+       
+        <h2 class="findus">Find us in these cities and many more! </h2>
+                <div class="city">
+            <picture>
+               <div class="images">
+                <img src="/Assets/Islamabad.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Islamabad</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Karachi.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Karachi</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Lahore.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Lahore</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Faisalabad.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Faisalabad</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Rawalpindi.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Rawalpindi</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Abottabad.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Abottoabad</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Bahawalpur.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Bahwalpur</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-DeraGhaziKhan.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Dera Ghazi Khan</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Gujranwala.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Gujranwala</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Gujrat.jpg.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Gujrat</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Hyderabad.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Hyderabad</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Jhelum.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Jhelum</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Kamoke.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Kamoke</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Larkana.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Larkana</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Mangla.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Mangla</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Mardan.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Mardan</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Multan.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Multan</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Murree.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Murree</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Okara.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Okara</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-PanoAqil.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Pano Aqil</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Peshawar.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Peshawar</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Quetta.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Quetta</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-RahimYarKhan.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Rahim Yar Khan</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Sadiqabad.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sadiqabad</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Sahiwal.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sahiwal</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Sargodha.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sargodha</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-Sheikhupura.jpg.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sheikhupura</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Sialkot.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sialkot</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/Sukkur.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Sukkur</span>
+            </div>
+        </picture>
+            <picture>
+               <div class="images">
+                <img src="/Assets/city-tile-WahhCannt.jpg" alt="" srcset="">
+            </div>
+            <div class="name">
+                <span>Wah Cannt</span>
+            </div>
+        </picture>
+      </div> 
+      <div class="pocket">
+        <div class="h">
+           <h2> Put us in your pocket</h2>
+        </div>
+        <div class="download">
+            <div class="left">
+                <h4>Download the food and groceries you love</h4>
+                <div class="qr-p">
+                <div class="qr">
+                   <img src="/Assets/pkhomepageqrcode.png" alt="" srcset="">
+                </div>
+                <div class="p"><p>It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.</p></div>
+            </div>
+            <div class="btn">
+                <button id="apple"><i class="uil uil-apple"></i><div>Download on the <b> App Store</b></div></button>
+                <button id="playstore"><img src="Assets/playstore.png" alt="" srcset="" height="25px" width="25px"><div>Get IT on <b>Google Play</b></div></button>
+                <button id="appgallery"><i class="uil uil-package"></i><div> Eplore IT on <b>AppGallery</b></div></button>
+             </div>
+            </div>
+            <div class="right">
+                <img src="/Assets/home-foodpanda-apps.png" alt="" srcset="">
+            </div>
+        </div>
+      </div>  
+      <div class="office">
+        <div class="h">
+            <h2>Take your office out to lunch</h2>
+        </div>
+        <div class="upper"></div>
+        <div>
+            <img src="Assets/home-corporate-pk.jpg" alt="" srcset="">
+        </div>
+        <div class="office-part">
+            <h3>foodpanda for business </h3>
+            <p>Order lunch or fuel for work-from-home, late nights in the office, corporate events, client meetings, and much more.</p>
+                <button>Get started</button>
+        </div>  
+        <div class="part1"></div>
+      </div> 
+      <div class="QA">
+        <div class="firstQA">
+        <h2>Order food and groceries online from the best restaurants and shops on foodpanda</h2>
+        <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your every day easier.</p>
+       </div>
+        <div class="firstQA">
+        <h2>What's new?</h2>
+        <p><span>✓</span> Wide variety of restaurants and shops, an abundance of cuisines & products.</p>
+           <p><span>✓</span> High quality delivery service.</p> 
+            <p><span>✓</span> Live chat feature to give App users instant help when they need it.</p>
+           <p><span>✓</span> NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.
+           </p>
+       </div>
+       <hr>
+    </div>
+</div> 
+        <div class="firstQA">
+        <h2>Frequently Asked Questions</h2>
+        <h3>How can I get foodpanda delivery? </h3>
+        <p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep! </p>
+       </div>
+        <div class="firstQA">
+        <h3>Which takeout restaurants open now near me?</h3>
+        <p>You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to your area. </p>
+       </div>
+        <div class="firstQA">
+        <h3>Does foodpanda deliver 24 hours?        </h3>
+        <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by using your address. You can also order groceries 24 hours a day via pandamart. </p>
+       </div>
+        <div class="firstQA">
+        <h3>What restaurants let you order online? </h3>
+        <p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, <a href="">KFC</a>, <a href="">McDonald's</a>, <a href="">Pizza Hut</a>, <a href=""> OPTP</a>, <a href="">Hardee's</a>, <a href="">Domino's</a>, <a href="">Kababjees</a>  and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.</p>
+       </div>
+     
+      
+      <div class="country">
+       <div><hr></div> 
+        <div class="atag"><a href="">Laos</a> <span>|</span>
+         <a href="">Cambodia</a><span>|</span>
+         <a href="">Myanmar </a><span>|</span>
+         <a href="">Thailand</a> <span>|</span>
+         <a href="">HongKong</a> <span>|</span>
+         <a href="">Taiwan</a><span>|</span>
+         <a href="">Malaysia</a> <span>|</span>
+         <a href="">Philippines </a><span>|</span>
+         <a href="">Singapore</a> <span>|</span>
+         <a href="">Bangladesh</a>
+        </div> 
+         <div><hr></div>
+      </div>  
+      
+
+     <div class="links">
+        <div class="lefts"><p>©foodpanda</p></div>
+     <div class="rights">
+        <div class="1">
+            <a href="">Press</a>
+            <a href="">pandapay Terms and Conditions</a>
+            <a href="">Security </a>
+            <a href="">Careers</a>
+            <a href="">Cashback Terms and Conditions</a>
+            <a href="">Partner with Us</a>
+            <a href="">All cities</a>
+            <a href="">Monthly Subscription</a>
+            <a href="">Ramzan deals</a>
+        </div>
+        <div class="2">
+            <a href="">Help Center</a>
+            <a href="">Terms and Conditions</a>
+            <a href="">Download foodpanda Apps</a>
+            <a href="">Suggest a Restaurant</a>
+            <a href="">All cuisines</a>
+            <a href="">pandago - Request a Rider</a>
+            <a href="">Update on COVID-19 in Pakistan</a>
+            <a href="">foodpanda Home Chef</a>
+            <a href="">Areas delivered in Islamabad</a>
+        </div>
+        <div class="3">
+            <a href="">Refunds with pandapay</a>
+            <a href="">Privacy policy</a>
+            <a href="">Human rights policy</a>
+            <a href="">Corporate Customer</a>
+            <a href="">foodpanda Magazine</a>
+            <a href="">foodpanda Vouchers & Coupons</a>
+            <a href="">pandamart Grocery Delivery</a>
+            <a href="">Become an Affiliate</a>
+            <a href="">Areas delivered in Peshawar</a>
+        </div>
+    </div>
+     </div>
+     <hr>
+     <div class="footer">
+        <div class="lft">
+            <span class="logo">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28" data-testid="brand-icon-icon" aria-hidden="true" focusable="false" class="logo-icon"><path d="M35 0H5C2.24 0 0 2.24 0 5v30c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Z" fill="#ff2b85"></path><path d="M14.58 17.53c.41-.04.71-.4.68-.81a.756.756 0 0 0-.81-.68c-.39.03-.68.35-.68.74.02.43.38.76.81.75Zm10.44-1.33c.12-.09.25-.14.4-.16.43-.02.79.32.81.75 0 .41-.33.75-.75.75s-.75-.33-.75-.75c0-.23.11-.45.29-.59Z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M33.51 14.52v-.03c-.15-.3-.1-.65.12-.9a4.983 4.983 0 0 0 .89-4.78c-.06-.19-.34-.24-.61-.29-.26-.05-.52-.09-.62-.26-.09-.15-.06-.38 0-.63.02-.07.03-.13.04-.2.05-.26.07-.51-.06-.64s-.28-.26-.42-.37l-.09-.07c-1-.74-2.23-1.1-3.47-1.03-1.08.05-2.23.41-3.06 1.14-.4.29-.92.37-1.39.22l-.07-.02c-.84-.3-1.7-.52-2.58-.66a14.28 14.28 0 0 0-6.95.66h-.05c-.45.18-.96.1-1.35-.19-1.55-1.37-4.68-1.71-6.72.01-2.23 1.88-2.36 5.17-.71 7.1.22.25.26.6.12.9-.98 2-1.5 4.2-1.51 6.43 0 7.97 6.72 13.77 15 13.77 8.28 0 15-5.8 15-13.77 0-2.22-.52-4.41-1.49-6.41 0 0 0 .02-.01.02h-.01ZM19.9 20.19c1.19 0 2.15.26 2.15.72 0 .46-.96 1.5-2.15 1.5s-2.15-1.04-2.15-1.5c0-.46.96-.72 2.15-.72ZM7.86 11.8a.578.578 0 0 1-.18-.2c-.02-.03-.04-.07-.06-.1-.36-.66-.45-1.44-.23-2.16.42-1.41 1.92-2.24 3.35-2.05.37.05.74.17 1.07.35.14.08.26.17.37.28.04.04.08.09.1.15.02.09 0 .18-.07.25-.06.06-.14.11-.22.15-1.37.8-2.49 1.95-3.52 3.14-.17.19-.35.37-.61.19Zm3.66 11.33c-1.24-.14-2.32-1.45-2.73-2.77-.18-.58-.61-3.26 1.31-5.2.64-.64 1.54-1.21 2.79-1.59.41-.1.82-.15 1.24-.15.62 0 1.36.1 1.95.53 1.24.91 1.26 2.44.52 3.23s-2.4 2.59-2.83 4.06c-.42 1.47-1.01 2.04-2.26 1.9 0 0 .01-.01.01 0v-.01Zm8.4 4.43h-.04c-2.39-.01-4.32-1.7-4.32-3.4 0-.59.26-.89.89-.73.37.09 1.89.48 3.27.48h.35c1.35 0 2.82-.37 3.24-.48h.03c.64-.16.89.14.89.72 0 1.7-1.93 3.39-4.32 3.4h.01v.01Zm11.09-7.22c-.41 1.32-1.49 2.63-2.73 2.77-1.24.14-1.83-.42-2.26-1.9-.43-1.47-2.09-3.28-2.83-4.07-.74-.78-.72-2.32.52-3.23.58-.43 1.33-.53 1.95-.53.42 0 .83.05 1.24.15 1.25.38 2.15.94 2.79 1.58 1.92 1.94 1.49 4.62 1.31 5.2 0 0 .01.03 0 .03h.01Zm1.37-8.84-.06.1a.86.86 0 0 1-.18.2c-.26.18-.44 0-.61-.19-1.03-1.19-2.15-2.34-3.52-3.14a1.07 1.07 0 0 1-.22-.15.33.33 0 0 1-.08-.25c.02-.06.05-.11.1-.15.11-.11.23-.21.37-.28.33-.18.7-.3 1.07-.35 1.43-.19 2.93.64 3.35 2.05.21.72.13 1.5-.23 2.16h.01Z" fill="#fff"></path></svg>
+                <p>foodpanda</p>
+             </span>
+             <span class="line">|</span>
+             <span><svg width="160" height="32" viewBox="0 0 300 64" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_1088_35094" maskUnits="userSpaceOnUse" x="0" y="10" width="62" height="45" style="mask-type: luminance;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 10H61.7303V55H0V10Z" fill="white"></path></mask><g mask="url(#mask0_1088_35094)"><path fill-rule="evenodd" clip-rule="evenodd" d="M52.503 31.1474C52.488 31.1544 52.48 31.1614 52.468 31.1664L46.336 33.6684L46.149 33.7534L44.655 40.5824C44.555 40.8154 44.257 40.8704 44.056 40.6754L39.589 35.3934L39.567 35.3784L14.379 46.1874C14.357 46.1994 14.332 46.2044 14.308 46.2044C14.214 46.2044 14.139 46.1294 14.139 46.0344C14.139 45.9804 14.165 45.9304 14.207 45.8994L35.984 29.5984L33.229 23.3084C33.091 23.0214 33.345 22.7164 33.682 22.8004H33.685L40.357 24.4454L45.538 19.8334V19.8344C45.763 19.6594 46.066 19.7844 46.122 20.0604L46.629 26.9904L52.604 30.4854C52.86 30.6494 52.823 31.0274 52.503 31.1474M49.458 11.3434C41.728 8.31042 33.226 10.5874 27.979 16.4184L7.50504 38.3504C7.23004 38.6454 7.35704 39.0154 7.69304 39.0654L13.147 39.4004C13.584 39.4274 13.638 39.8024 13.418 40.0604L0.0850411 54.4424C-0.145959 54.6924 0.133041 55.0834 0.451041 54.9844L19.487 48.9694C19.89 48.8314 20.2 49.1894 20.029 49.5034L17.483 54.0054C17.352 54.2624 17.599 54.6144 17.919 54.5904L45.363 48.4774C51.922 47.4394 57.776 43.0624 60.379 36.4354C64.298 26.4884 59.401 15.2554 49.458 11.3434" fill="#D61F26"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M123.031 44.7135H116.777L121.67 21.7975L128.49 19.2905L123.031 44.7135Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M109.598 31.5875C108.101 31.5875 107.24 32.8265 106.89 34.2645C109.851 34.2645 110.747 33.3395 110.747 32.5715C110.747 32.0325 110.265 31.5875 109.598 31.5875M106.19 38.2775C106.156 38.4355 106.124 38.7255 106.124 38.8825C106.124 39.9035 106.823 40.2525 108.675 40.2525C110.33 40.2525 112.687 39.8385 114.059 39.3615V44.0465C112.307 44.6835 109.563 45.0325 107.365 45.0325C102.202 45.0325 99.7168 43.6295 99.7168 38.9475C99.7168 34.3525 101.851 27.1855 110.077 27.1855C115.3 27.1855 116.861 29.5475 116.861 32.0325C116.861 35.2505 114.091 37.9905 106.19 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M134.389 26.365C132.257 26.365 130.885 24.995 130.885 23.114C130.885 20.66 132.607 19.29 134.739 19.29C136.907 19.29 138.247 20.66 138.247 22.509C138.247 24.995 136.557 26.365 134.389 26.365" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M130.001 27.7627H136.438L133.183 44.4607H126.682L128.975 32.7347" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M154.983 27.7627C152.751 33.3717 150.296 38.8517 147.174 44.4607H139.206C138.187 39.1687 137.74 33.5927 137.869 27.7627H144.372C144.241 30.5027 144.275 33.3087 144.431 35.9177C144.465 36.6197 144.531 37.2877 144.592 37.9617H144.629C144.913 37.2877 145.229 36.6197 145.517 35.9177C146.631 33.1737 147.651 30.1867 148.421 27.7627H154.983Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M163.682 31.5875C162.187 31.5875 161.322 32.8265 160.968 34.2645C163.937 34.2645 164.829 33.3395 164.829 32.5715C164.829 32.0325 164.353 31.5875 163.682 31.5875M160.274 38.2775C160.243 38.4355 160.206 38.7255 160.206 38.8825C160.206 39.9035 160.911 40.2525 162.756 40.2525C164.414 40.2525 166.773 39.8385 168.143 39.3615V44.0465C166.389 44.6835 163.649 45.0325 161.452 45.0325C156.286 45.0325 153.801 43.6295 153.801 38.9475C153.801 34.3525 155.935 27.1855 164.16 27.1855C169.386 27.1855 170.945 29.5475 170.945 32.0325C170.945 35.2505 168.177 37.9905 160.274 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M183.445 33.656C183.091 33.56 182.389 33.463 181.881 33.463C180.445 33.463 179.298 34.899 178.786 37.544L177.454 44.461H170.945L174.202 27.763H179.079L179.237 29.989C180.733 28.143 181.915 27.186 183.73 27.186C184.557 27.186 185.005 27.249 185.225 27.314L183.445 33.656Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M203.774 27.7627C200.903 35.2197 198.355 40.6687 195.805 44.4317C192.109 49.9467 188.857 51.2207 185.508 51.2207C184.52 51.2207 183.47 50.9617 182.959 50.7077L183.981 45.8967H186.212C187.328 45.8967 187.803 45.4477 188.539 44.4607C187.295 39.9687 186.688 33.6907 186.752 27.7627H193.288C193.155 30.4687 193.189 33.2767 193.351 35.8247C193.383 36.5547 193.443 37.2577 193.506 37.9617H193.541C193.827 37.2877 194.143 36.6197 194.433 35.8877C195.517 33.2417 196.571 30.2137 197.267 27.7627H203.774Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M228.765 44.4609H221.908L223.535 36.0449H217.732L216.105 44.4609H209.256L213.589 22.2139H220.444L218.883 30.1519H224.684L226.245 22.2139H233.094L228.765 44.4609Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M242.271 31.5875C240.773 31.5875 239.915 32.8265 239.564 34.2645C242.529 34.2645 243.424 33.3395 243.424 32.5715C243.424 32.0325 242.941 31.5875 242.271 31.5875M238.862 38.2775C238.829 38.4355 238.8 38.7255 238.8 38.8825C238.8 39.9035 239.502 40.2525 241.346 40.2525C243.006 40.2525 245.365 39.8385 246.735 39.3615V44.0465C244.983 44.6835 242.241 45.0325 240.04 45.0325C234.876 45.0325 232.391 43.6295 232.391 38.9475C232.391 34.3525 234.527 27.1855 242.75 27.1855C247.978 27.1855 249.542 29.5475 249.542 32.0325C249.542 35.2505 246.763 37.9905 238.862 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M262.031 33.656C261.681 33.56 260.985 33.463 260.472 33.463C259.039 33.463 257.889 34.899 257.38 37.544L256.04 44.461H249.543L252.79 27.763H257.665L257.826 29.989C259.325 28.143 260.501 27.186 262.316 27.186C263.149 27.186 263.593 27.249 263.819 27.314L262.031 33.656Z" fill="#D61F26"></path><mask id="mask1_1088_35094" maskUnits="userSpaceOnUse" x="262" y="27" width="20" height="19" style="mask-type: luminance;"><path fill-rule="evenodd" clip-rule="evenodd" d="M262.734 27.1851H281.091V45.0321H262.734V27.1851Z" fill="white"></path></mask><g mask="url(#mask1_1088_35094)"><path fill-rule="evenodd" clip-rule="evenodd" d="M272.709 32.3181C270.096 32.3181 269.394 36.3011 269.394 38.0881C269.394 39.5211 269.999 39.9341 271.182 39.9341C273.759 39.9341 274.428 35.9491 274.428 34.1371C274.428 32.7341 273.856 32.3181 272.709 32.3181M270.283 45.0321C265.218 45.0321 262.734 42.8641 262.734 38.5311C262.734 33.7181 265.124 27.1851 273.54 27.1851C278.574 27.1851 281.091 29.4171 281.091 33.6901C281.091 38.5981 278.699 45.0321 270.283 45.0321" fill="#D61F26"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M85.7605 39.1688H84.4855L86.7785 27.4398H88.5665C91.2735 27.4398 92.2615 29.0398 92.2615 31.2328C92.2615 35.6658 89.8035 39.1688 85.7605 39.1688V39.1688ZM91.8335 27.8558L96.1665 23.6978C94.4765 22.6808 92.1565 22.2148 89.2625 22.2148H87.7985H80.9775L76.6465 44.4618H83.4615H85.2845C95.3205 44.4618 99.3325 37.4498 99.3325 30.1518C99.3325 28.2568 98.9255 26.7408 98.1375 25.5628L91.8335 27.8558Z" fill="#D61F26"></path></svg></span>
+        </div>
+        <div class="rgt">
+         <span class="instagram"><i class="uil uil-instagram"></i></span>
+         <span class="fb"><i class="uil uil-facebook"></i></span>
+        </div>
+     </div>
+    </div>
+
+               <!-- Home Page End -->
+
+    <div class="newlogin"></div>
+    <div class="box">
+        <button class="cross">X</button>
+        <h1>Welcome!</h1>
+        <p>Sign up or log in to continue</p>
+        <button class="button-facebook "><span class="button-facebook__logo"><i class="uil uil-facebook"></i> Continue with Facebook</span></button>
+        <div class="google">
+            <div>
+            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"   height="15px" width="15px" class="LgbsSe-Bz112c"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg></span> Continue with Google</div>
+        </div>
+        <div class="apple">
+            <div>
+            <span><i class="uil uil-apple"></i></span>
+            Continue with Apple
+        </div>
+        </div>
+        <p class="or">Or</p>
+        <button id="logins">Log in</button>
+        <button id="signups">Sign up</button>
+
+    </div>
+   
+    <form action="">
+    <div class="signupform">
+        <button id="crossed" class="cross">X</button>
+        <button id="arrowsign" class="arrow"><i class="uil uil-arrow-left"></i></button>
+        <h1>Welcome!</h1>
+        <p>Sign up to continue</p>
+        <input type="text" id="name"  placeholder="Name" required>
+        <input type="email" id="email"  placeholder="Email" required>
+        <input type="password" id="password"  placeholder="Password" required>
+        <button id="signupok">Sign up</button>
+        <span class="checkbox"><input type="checkbox" name="" id=""><p>Remember me</p></span>
+        <span class="already"><p>Already have an account?</p> <a href="#" class="tologin">Log in</a></span>
+    </div>
+    </form>
+    <form action="">
+    <div class="loginform">
+        <button id="crosse" class="cross">X</button>
+        <button id="arrowlog" class="arrow"><i class="uil uil-arrow-left"></i></button>
+        <h1>Welcome!</h1>
+        <p>Log in to continue</p>
+        <input type="email" placeholder="Email" required id="loginmail">
+        <input type="password" placeholder="Password" required id="loginpass">
+        <button id="loginok">Log in</button>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
